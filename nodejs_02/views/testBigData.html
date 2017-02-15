@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>几千上万数据前端流畅展示</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        #box {
+            width: 80%;
+            margin : 0 auto;
+            height : 100px;
+            overflow-y: scroll ;
+            position: relative;
+        }
+        .data-content{
+            position: absolute;
+            left : 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script src="/dataload.js?t=4" type="text/javascript"></script>
+    <script type="text/javascript">
+        dataload.init();
+    </script>
+</body>
+</html>
